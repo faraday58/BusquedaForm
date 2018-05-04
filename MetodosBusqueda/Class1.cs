@@ -21,13 +21,13 @@ namespace MetodosBusqueda
                 }
                 else if( V[CEN]> X  )
                 {
-                    IZQ = CEN + 1;
+                    DER = CEN;
 
                     CEN = (IZQ + DER) / 2;
                 }
                 else
                 {
-                    DER = CEN;
+                    IZQ = CEN+1;
                     CEN = (IZQ + DER) / 2;
 
                 }
